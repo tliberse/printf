@@ -18,7 +18,7 @@ FL	= -Wall -Werror -Wextra -o
 
 # -- SRC -- #
 
-NAME = printf.a
+NAME = libftprintf.a
 
 SRC =	ft_printf.c\
 		ft_putchar.c\

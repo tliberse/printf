@@ -6,20 +6,37 @@
 /*   By: tliberse <tliberse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:45:12 by tliberse          #+#    #+#             */
-/*   Updated: 2024/11/12 16:55:59 by tliberse         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:38:31 by tliberse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
+
+// static int	ft_putnbrhex_low_ptr(unsigned long long n)
+// {
+// 	int		count;
+// 	char	*hex_digits;
+
+// 	count = 0;
+// 	hex_digits = "0123456789abcdef";
+// 	if (n >= 16)
+// 		count += ft_putnbrhex_low_ptr(n / 16);
+// 	count += ft_putchar(hex_digits[n % 16]);
+// 	return (count);
+// }
 
 int	ft_puthexptr(void *p)
 {
 	int	count;
 
 	count = 0;
-	count += ft_putchar('0');
-	count += ft_putchar('x');
-	count += ft_putnbrhex_low((unsigned long long)p);
+	if (p == 0)
+		count += ft_putstr("(nil)");
+	else
+	{
+		count += ft_putstr("0x");
+		count += ft_putnbrhex_low((unsigned long long)p);
+	}
 	return (count);
 }
 

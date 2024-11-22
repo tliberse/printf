@@ -6,13 +6,13 @@
 /*   By: tliberse <tliberse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:15:07 by tliberse          #+#    #+#             */
-/*   Updated: 2024/11/12 15:41:50 by tliberse         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:37:45 by tliberse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	ft_putnbrhex_low(unsigned int n)
+int	ft_putnbrhex_low(unsigned long long n)
 {
 	int		count;
 	char	*hex_digits;

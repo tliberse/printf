@@ -6,11 +6,11 @@
 /*   By: tliberse <tliberse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 14:51:51 by tliberse          #+#    #+#             */
-/*   Updated: 2024/11/12 15:42:53 by tliberse         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:17:38 by tliberse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {

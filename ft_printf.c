@@ -6,11 +6,11 @@
 /*   By: tliberse <tliberse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:50:48 by tliberse          #+#    #+#             */
-/*   Updated: 2024/11/12 17:00:18 by tliberse         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:32:37 by tliberse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_format(va_list args, const char format)
 {
@@ -64,13 +64,14 @@ int	ft_printf(const char *format, ...)
 
 // int main(void)
 // {
-// 	ft_printf("Character: %c\n", 'A');
-// 	ft_printf("String: %s\n", "j'ai faim!");
-// 	ft_printf("Pointer: %p\n", &main);
-// 	ft_printf("Integer: %d\n", 42);
-// 	ft_printf("Unsigned: %u\n", 12345);
-// 	ft_printf("Hex low: %x\n", -255);
-// 	ft_printf("Hex up: %X\n", 255);
-// 	ft_printf("Pct: %%\n");
+// 	printf(" %p %p ", 0, 0);
+// 	// ft_printf("Character: %c\n", 'A');
+// 	// ft_printf("String: %s\n", "j'ai faim!");
+// 	// ft_printf("Pointer: %p\n", &main);
+// 	// ft_printf("Integer: %d\n", 42);
+// 	// ft_printf("Unsigned: %u\n", 12345);
+// 	// ft_printf("Hex low: %x\n", -255);
+// 	// ft_printf("Hex up: %X\n", 255);
+// 	// ft_printf("Pct: %%\n");
 // 	return (0);
 // }

@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tliberse <tliberse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 15:12:55 by tliberse          #+#    #+#             */
-/*   Updated: 2024/11/12 16:39:04 by tliberse         ###   ########.fr       */
+/*   Updated: 2024/11/22 14:41:01 by tliberse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdio.h>
 # include <unistd.h>
@@ -27,7 +27,7 @@ int	ft_putstr(char *s);
 int	ft_puthexptr(void *p);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
-int	ft_putnbrhex_low(unsigned int n);
+int	ft_putnbrhex_low(unsigned long long n);
 int	ft_putnbrhex_up(unsigned int n);
 
 #endif
